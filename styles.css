@@ -1,0 +1,331 @@
+:root {
+    --dark-green: #0A400C;
+    --medium-green: #819067;
+    --light-green: #B1AB86;
+    --cream: #FEFAE0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-green);
+    background: var(--cream);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ヒーローセクション */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--dark-green) 0%, var(--medium-green) 100%);
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23FEFAE0" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23FEFAE0" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23FEFAE0" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="%23FEFAE0" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="%23FEFAE0" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    text-align: center;
+    color: var(--cream);
+}
+
+.hero-image {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--light-green);
+    box-shadow: 0 20px 60px rgba(10, 64, 12, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, var(--cream) 0%, var(--light-green) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    opacity: 0.8;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+/* セクション共通スタイル */
+.section {
+    padding: 100px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.section:nth-child(even) {
+    background: linear-gradient(135deg, var(--cream) 0%, #f8f6f0 100%);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: var(--dark-green);
+    position: relative;
+    letter-spacing: -0.02em;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--medium-green);
+    border-radius: 2px;
+}
+
+/* 特徴セクション */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.feature-card {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(10, 64, 12, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(177, 171, 134, 0.2);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(10, 64, 12, 0.15);
+}
+
+.feature-icon {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    filter: grayscale(20%);
+}
+
+.feature-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--dark-green);
+}
+
+.feature-card p {
+    color: var(--medium-green);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* 開催情報セクション */
+.event-info {
+    background: linear-gradient(135deg, var(--medium-green) 0%, var(--dark-green) 100%);
+    color: var(--cream);
+}
+
+.event-info .section-title {
+    color: var(--cream);
+}
+
+.event-info .section-title::after {
+    background: var(--light-green);
+}
+
+.event-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.event-detail {
+    background: rgba(254, 250, 224, 0.1);
+    padding: 40px 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(254, 250, 224, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.event-detail:hover {
+    transform: translateY(-5px);
+}
+
+.event-detail h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--light-green);
+}
+
+.event-detail p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* 参加方法セクション */
+.participation-styles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.participation-card {
+    background: linear-gradient(135deg, var(--light-green) 0%, var(--medium-green) 100%);
+    padding: 40px 35px;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--cream);
+    box-shadow: 0 15px 40px rgba(129, 144, 103, 0.2);
+    transition: all 0.3s ease;
+}
+
+.participation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(129, 144, 103, 0.3);
+}
+
+.participation-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.participation-card p {
+    opacity: 0.95;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* フッター */
+.footer {
+    background: var(--dark-green);
+    color: var(--cream);
+    text-align: center;
+    padding: 60px 0;
+}
+
+.footer p {
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .feature-card {
+        padding: 40px 30px;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .participation-styles,
+    .event-details {
+        grid-template-columns: 1fr;
+    }
+}
