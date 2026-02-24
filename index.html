@@ -92,6 +92,10 @@
                     <p>オンライン開催<br>（気軽に参加）</p>
                 </div>
                 <div class="event-detail">
+                    <h3>🎯 第8回</h3>
+                    <p>2026年2月24日（火）<br>22:02〜22:59</p>
+                </div>
+                <div class="event-detail">
                     <h3>🎯 第7回</h3>
                     <p>2026年1月28日（水）<br>22:00〜23:00</p>
                 </div>
@@ -157,6 +161,98 @@
                     <div class="feature-icon">❓</div>
                     <h3>課題・困りごと</h3>
                     <p>生成AI活用で困っていることや課題を共有し、みんなで解決策を考えます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第8回の内容セクション -->
+    <section class="section" id="vol8-content">
+        <div class="container">
+            <h2 class="section-title">第8回の内容はこちら</h2>
+            <div class="vol1-content">
+                <div class="vol1-image">
+                    <img src="cameet8.png" alt="第8回生成AIキャッチアップ会の内容まとめ" class="vol1-summary-image">
+                </div>
+                <div class="vol1-details">
+                    <div class="vol1-info">
+                        <h3>📅 開催日時</h3>
+                        <p>2026年2月24日（火）22:02-22:59</p>
+                    </div>
+                    
+                    <div class="vol1-topics">
+                        <h3>🎯 主な話題</h3>
+                        <div class="topic-grid">
+                            <div class="topic-item">
+                                <div class="topic-icon">💻</div>
+                                <div class="topic-content">
+                                    <h4>ローカルLLMの運用</h4>
+                                    <p>Mac Mini 24GB/64GBでGemma 3（12B/27B）運用、Ollamaでの日本語特化モデル活用、GPUなしでは厳しい現実</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🤖</div>
+                                <div class="topic-content">
+                                    <h4>OpenCrow</h4>
+                                    <p>端末内完結のエージェント型AI、ブラウザ操作自動化、Mac Mini 1台で2エージェント、中学生が4台で8エージェント運用</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🏢</div>
+                                <div class="topic-content">
+                                    <h4>AI業界の動向</h4>
+                                    <p>Anthropic設立の背景（OpenAI離脱組）、GoogleのTPU独自路線、各社のエンジニア囲い込み競争</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🔧</div>
+                                <div class="topic-content">
+                                    <h4>Vibe Local</h4>
+                                    <p>完全ローカル動作のClaude Code風ツール、Ollamaで動作、ネットワーク切断後も利用可能、非エンジニアでも活用</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🎪</div>
+                                <div class="topic-content">
+                                    <h4>ITコミュニティイベントでのAI活用</h4>
+                                    <p>Kiro CLI + Claude Sonnet 4.5でランディングページ作成、Backlog課題管理自動化、Gamma/Jensparkでスライド作成</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🏥</div>
+                                <div class="topic-content">
+                                    <h4>医療現場でのAI活用</h4>
+                                    <p>5000文字超のカルテ要約、MeCabで文節分割、2000単語で分割処理、時系列構造化サマリー生成</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vol1-highlights">
+                        <h3>💡 技術的な発見・Tips</h3>
+                        <ul class="highlights-list">
+                            <li><strong>Mac Mini性能</strong>：24GBメモリでGPU換算16GB相当、Gemma 3 12Bが快適動作</li>
+                            <li><strong>OpenCrow認証</strong>：OAuth認証でAPI課金なし、ChatGPTが公式対応（Claude禁止後）</li>
+                            <li><strong>MCP活用</strong>：Model Context ProtocolでBacklogへ直接課題登録、Nulabが公式サーバー提供</li>
+                            <li><strong>CapCut効率化</strong>：TikTok社提供、YouTube/TikTokへ直接投稿、切り抜き動画に最適</li>
+                            <li><strong>医療AI実装</strong>：自然言語処理（MeCab）で分割→各セクション要約→統合の3段階処理</li>
+                            <li><strong>Backlog AI機能</strong>：プレミアムプラン（29,700円/月）以上、ユーザー数無制限、Google Meet議事録から自動タスク抽出</li>
+                        </ul>
+                    </div>
+
+                    <div class="vol1-decisions">
+                        <h3>📋 印象的な発言・気づき</h3>
+                        <ul class="decisions-list">
+                            <li>OpenCrowの開発者がOpenAIに入社 - 優秀なエンジニアの囲い込み競争</li>
+                            <li>Anthropic設立の経緯：Microsoft資本流入を嫌ったOpenAI上級研究員が離脱</li>
+                            <li>GoogleはTPUで完全独自路線、唯一自社資本のみで運営</li>
+                            <li>完全ローカル環境でのエージェント活用が医療など閉鎖環境でも可能に</li>
+                            <li>プログラミングより自然言語での指示が主流になる可能性</li>
+                            <li>Jensparkは各社モデル試用可能、24.9ドル/月でチャット・画像生成無制限</li>
+                            <li>NotebookLMがPowerPointへ直接エクスポート可能に、文字として編集可能</li>
+                            <li>HTML形式スライドが生成AIとの相性良好、Claude Codeで自動生成</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
