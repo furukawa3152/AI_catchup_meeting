@@ -92,6 +92,10 @@
                     <p>オンライン開催<br>（気軽に参加）</p>
                 </div>
                 <div class="event-detail">
+                    <h3>🎯 第12回</h3>
+                    <p>2026年6月28日（日）<br>21:30〜22:33</p>
+                </div>
+                <div class="event-detail">
                     <h3>🎯 第11回</h3>
                     <p>2026年5月24日（日）<br>21:30〜22:29</p>
                 </div>
@@ -173,6 +177,96 @@
                     <div class="feature-icon">❓</div>
                     <h3>課題・困りごと</h3>
                     <p>生成AI活用で困っていることや課題を共有し、みんなで解決策を考えます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第12回の内容セクション -->
+    <section class="section" id="vol12-content">
+        <div class="container">
+            <h2 class="section-title">第12回の内容はこちら</h2>
+            <div class="vol1-content">
+                <div class="vol1-image">
+                    <img src="cameet12.png" alt="第12回生成AIキャッチアップ会の内容まとめ" class="vol1-summary-image">
+                </div>
+                <div class="vol1-details">
+                    <div class="vol1-info">
+                        <h3>📅 開催日時</h3>
+                        <p>2026年6月28日（日）21:30-22:33（開始から1年・節目の回）</p>
+                    </div>
+
+                    <div class="vol1-topics">
+                        <h3>🎯 主な話題</h3>
+                        <div class="topic-grid">
+                            <div class="topic-item">
+                                <div class="topic-icon">🤝</div>
+                                <div class="topic-content">
+                                    <h4>モデルの使い分け（Claude × Codex）</h4>
+                                    <p>一方に作らせ、もう一方にレビュー・修正させ、最後に元へ戻す協調スタイル。挙動の違いや「混ぜると危険」という指摘も</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🎨</div>
+                                <div class="topic-content">
+                                    <h4>フロントエンド生成サービス</h4>
+                                    <p>UI特化サービスは内部に前提・テンプレートを作り込み、簡単な指示で気の利いたUIを生成。動いているのは汎用モデル</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🛡️</div>
+                                <div class="topic-content">
+                                    <h4>クラウド経由のモデル利用</h4>
+                                    <p>接続先を契約済みクラウドへ切り替えると情報が自社契約内に閉じる。セキュリティ要件下での有力な選択肢</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🧩</div>
+                                <div class="topic-content">
+                                    <h4>ノーコードツールとAIの相性</h4>
+                                    <p>独自ルールのGUI操作が必要なノーコードはAI時代に相対的にしんどい。公式MCPやDevTools連携が突破口に</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🎬</div>
+                                <div class="topic-content">
+                                    <h4>画像・動画生成、アバター</h4>
+                                    <p>画像から紙芝居動画を制作。本人の顔取り込みは悪用リスクから制限的で、テンプレート顔・合成音声が中心</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🤖</div>
+                                <div class="topic-content">
+                                    <h4>カンファレンス報告：フィジカルAI</h4>
+                                    <p>今年の軸はAIエージェントとフィジカルAI。物流ロボット、遠隔操作、二足歩行ロボットなどの展示を共有</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vol1-highlights">
+                        <h3>💡 技術的な発見・Tips</h3>
+                        <ul class="highlights-list">
+                            <li><strong>モデル協調</strong>：「作らせる→別モデルでレビュー・修正→元モデルで最終レビュー」が効率的だが、相互チェックで進みが鈍る副作用も</li>
+                            <li><strong>本質は前提条件</strong>：モデルの優劣以前に「実装に必要な情報を与えているか」が鍵。前提を詰めれば特化サービスでなくても近い成果が得られる</li>
+                            <li><strong>クラウド経由</strong>：コーディングツールの接続先を契約済みクラウドに切り替えると、情報システム部門が許可する範囲で安全に利用できる</li>
+                            <li><strong>ノーコード突破口</strong>：公式MCPの導入とブラウザDevTools連携MCPで、内部処理・状態変化をAIに読み取らせると開発効率が大きく向上</li>
+                            <li><strong>スクショ活用</strong>：マイナーなノーコード製品でも、スクリーンショットを渡せば的確なスクリプト記述やリファクタリングが得られる</li>
+                            <li><strong>利用規約の確認</strong>：適用される法律・入力情報の処理場所を把握しておくことが、業務利用では必須</li>
+                        </ul>
+                    </div>
+
+                    <div class="vol1-decisions">
+                        <h3>📋 印象的な発言・気づき</h3>
+                        <ul class="decisions-list">
+                            <li>複数モデルの併用は強力だが「混ぜると危険」。どちらも正解でない可能性もあり、明確な正解が定まらない処理では判断が難しい</li>
+                            <li>継ぎ足しで積み上げたコードを別モデルに丸ごと見せると、構造そのものへの指摘が出やすい。それは「ミス」とは限らない</li>
+                            <li>UI特化サービスの強みは作り込まれた前提・テンプレート。「一から構築するか／用意されたものを触るか」の違い</li>
+                            <li>個人利用レベルではノーコード専用ツールの優位性が薄れつつある一方、レガシー環境からの脱却が難しい組織も多い</li>
+                            <li>顔・声の生成は掘り下げると常に「悪用リスク」に行き着き、各社のせめぎ合いが続いている</li>
+                            <li>開発スピードは劇的に向上。半年かかっていた企業プロトタイプが1日で、コストも大幅圧縮という事例も</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
