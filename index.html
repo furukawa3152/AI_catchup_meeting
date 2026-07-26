@@ -92,6 +92,10 @@
                     <p>オンライン開催<br>（気軽に参加）</p>
                 </div>
                 <div class="event-detail">
+                    <h3>🎯 第13回</h3>
+                    <p>2026年7月26日（日）<br>21:30〜22:40</p>
+                </div>
+                <div class="event-detail">
                     <h3>🎯 第12回</h3>
                     <p>2026年6月28日（日）<br>21:30〜22:33</p>
                 </div>
@@ -177,6 +181,117 @@
                     <div class="feature-icon">❓</div>
                     <h3>課題・困りごと</h3>
                     <p>生成AI活用で困っていることや課題を共有し、みんなで解決策を考えます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第13回の内容セクション -->
+    <section class="section" id="vol13-content">
+        <div class="container">
+            <h2 class="section-title">第13回の内容はこちら</h2>
+            <div class="vol1-content">
+                <div class="vol1-image">
+                    <img src="cameet13.png" alt="第13回生成AIキャッチアップ会の内容まとめ" class="vol1-summary-image">
+                </div>
+                <div class="vol1-details">
+                    <div class="vol1-info">
+                        <h3>📅 開催日時</h3>
+                        <p>2026年7月26日（日）21:30-22:40</p>
+                    </div>
+
+                    <div class="vol1-topics">
+                        <h3>🎯 主な話題</h3>
+                        <div class="topic-grid">
+                            <div class="topic-item">
+                                <div class="topic-icon">🛡️</div>
+                                <div class="topic-content">
+                                    <h4>承認操作と自律実行の安全性</h4>
+                                    <p>AIコーディングエージェントの承認負担を軽減しつつ、許可する操作と人の確認が必要な操作をどう分けるかを議論</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">👥</div>
+                                <div class="topic-content">
+                                    <h4>複数エージェントによる記事制作</h4>
+                                    <p>リサーチ、執筆、校正、広報、タイトル、ファクトチェックなどを役割分担し、差し戻しを含む制作フローを構築</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🔀</div>
+                                <div class="topic-content">
+                                    <h4>順次処理と並列処理</h4>
+                                    <p>依存関係のある工程は順次実行し、独立した作業だけを並列化。ファイル競合を避け、最後に成果物を統合する設計が重要</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🔍</div>
+                                <div class="topic-content">
+                                    <h4>AI同士のコードレビュー</h4>
+                                    <p>Claude CodeとCodexで実装担当とレビュー担当を分け、異なるモデルの視点から見落としや不具合を発見</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🧩</div>
+                                <div class="topic-content">
+                                    <h4>Difyとノーコード型AI</h4>
+                                    <p>GUIでワークフローを組むDifyの再現性・可視性と、コード型エージェントの柔軟性を用途に応じて比較</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🏢</div>
+                                <div class="topic-content">
+                                    <h4>組織でのAIガバナンス</h4>
+                                    <p>禁止だけでなく、安全に利用できる承認済み環境を用意し、部門や用途に応じて権限を設計する必要性を共有</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">⚖️</div>
+                                <div class="topic-content">
+                                    <h4>Gemini・Claude Code・Codex比較</h4>
+                                    <p>使いやすさ、修正能力、処理時間、使用量制限、コストを比較。最上位モデルが常に最適とは限らないという見方も</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">📊</div>
+                                <div class="topic-content">
+                                    <h4>個人の金融資産チェック</h4>
+                                    <p>AIに判断を全面的に委ねず、人が定めた基準をコード化して検証。長期間のデータ品質と複数モデルによる再確認が重要</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">👓</div>
+                                <div class="topic-content">
+                                    <h4>生活支援AIとスマートグラス</h4>
+                                    <p>献立提案、語学練習、音声活用、翻訳表示など日常の小さなDXを共有。撮影・保存・送信時のプライバシーにも注意</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vol1-highlights">
+                        <h3>💡 技術的な発見・Tips</h3>
+                        <ul class="highlights-list">
+                            <li><strong>役割設計</strong>：複数エージェントは人数を増やすだけでなく、担当範囲、処理順序、差し戻し条件、成果物の受け渡しを決めて初めて機能する</li>
+                            <li><strong>コードレビュー</strong>：異なるモデルを組み合わせると見落としを発見しやすいが、同時編集を避けて実装担当とレビュー担当を明確にする</li>
+                            <li><strong>権限設計</strong>：自律実行を全面許可するのではなく、閲覧、編集、削除など操作単位で人の確認要否を決める</li>
+                            <li><strong>処理方式</strong>：依存関係のある工程は順次、独立した工程は成果物を分離して並列化し、競合を防ぐ</li>
+                            <li><strong>数値検証</strong>：高性能モデルでも複雑な数値処理では誤りが残るため、データの完全性と計算過程を人が追える形で残す</li>
+                            <li><strong>ツール選定</strong>：性能だけでなく、利用規約、組織の承認、コスト、使用量制限、データ管理まで含めて比較する</li>
+                        </ul>
+                    </div>
+
+                    <div class="vol1-decisions">
+                        <h3>📋 印象的な発言・気づき</h3>
+                        <ul class="decisions-list">
+                            <li>AI活用の本質はモデルの性能競争だけでなく、役割分担、レビュー、安全性、再現性をどう設計するかにある</li>
+                            <li>一つのAIにすべてを任せるより、専門的な役割を分けて相互確認する方が品質を高めやすい</li>
+                            <li>自律実行と安全性はトレードオフであり、全面許可でも毎回承認でもない適切な境界設計が必要</li>
+                            <li>ワークフローの初回構築は時間がかかっても、型が完成すれば別テーマへの展開と再利用がしやすくなる</li>
+                            <li>家庭で使える小さなAI活用は、業務改善へ転用できる着想にもなる</li>
+                            <li>スマートグラスなど常時利用するAIデバイスでは、利便性とプライバシーを同時に考える必要がある</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
