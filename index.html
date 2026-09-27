@@ -92,6 +92,10 @@
                     <p>オンライン開催<br>（気軽に参加）</p>
                 </div>
                 <div class="event-detail">
+                    <h3>🎯 第15回</h3>
+                    <p>2026年9月27日（日）<br>21:30〜22:44</p>
+                </div>
+                <div class="event-detail">
                     <h3>🎯 第14回</h3>
                     <p>2026年8月30日（日）<br>22:00〜23:01</p>
                 </div>
@@ -185,6 +189,117 @@
                     <div class="feature-icon">❓</div>
                     <h3>課題・困りごと</h3>
                     <p>生成AI活用で困っていることや課題を共有し、みんなで解決策を考えます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第15回の内容セクション -->
+    <section class="section" id="vol15-content">
+        <div class="container">
+            <h2 class="section-title">第15回の内容はこちら</h2>
+            <div class="vol1-content">
+                <div class="vol1-image">
+                    <img src="cameet15.png" alt="第15回生成AIキャッチアップ会の内容まとめ" class="vol1-summary-image">
+                </div>
+                <div class="vol1-details">
+                    <div class="vol1-info">
+                        <h3>📅 開催日時</h3>
+                        <p>2026年9月27日（日）21:30-22:44</p>
+                    </div>
+
+                    <div class="vol1-topics">
+                        <h3>🎯 主な話題</h3>
+                        <div class="topic-grid">
+                            <div class="topic-item">
+                                <div class="topic-icon">⚡</div>
+                                <div class="topic-content">
+                                    <h4>Jevによる判断特化と分岐設計</h4>
+                                    <p>文章生成ではなく選択肢からの判断向け。出荷倉庫の選択、問い合わせ分類、検索要否など、本処理の前に置くと速度と費用を抑えやすい</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🛠️</div>
+                                <div class="topic-content">
+                                    <h4>CLI型エージェントとスキルの横断利用</h4>
+                                    <p>Codex・Kiro・Claude Codeは操作感が似てきており定着しにくい。SKILL.mdなら特定ツール専用ではなく横断利用できる</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🌐</div>
+                                <div class="topic-content">
+                                    <h4>ブラウザ操作と初見作業の支援</h4>
+                                    <p>Codexの画面取得やブラウザ操作は初見の設定に強い。経過は見えやすい一方、職場の実ブラウザ操作は避けた方がよい</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">💻</div>
+                                <div class="topic-content">
+                                    <h4>エージェント実行環境とエディタ</h4>
+                                    <p>定期実行、軽量エディタ、複数エージェント並列が話題に。ローカル性能を上げるか、ウェブ実行に課金するかの分岐</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🏢</div>
+                                <div class="topic-content">
+                                    <h4>企業向けAI基盤と料金</h4>
+                                    <p>Vertex AIとBedrockは基盤契約とモデル従量課金を分ける点で類似。自社モデルはクレジット相殺しやすいが外部モデルは対象外になりやすい</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🔌</div>
+                                <div class="topic-content">
+                                    <h4>CursorとOpenAIの関係悪化</h4>
+                                    <p>Cursor上のOpenAIモデルが11月頃から使えなくなる見込み。代替としてGrokが候補。特定ベンダー依存は提携変化で急に使えなくなる</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">📉</div>
+                                <div class="topic-content">
+                                    <h4>OpenAIの負債と各社の収益構造</h4>
+                                    <p>2030年までに数十兆円規模の負債が見込まれる報道が話題。Microsoftとの関係悪化、AWSは資金提供ではなく提携という整理</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🛰️</div>
+                                <div class="topic-content">
+                                    <h4>短時間開発による位置情報アプリ</h4>
+                                    <p>衛星の位置・通信状況・肉眼での見え方や、花火の見通し地図を公開APIと地形データで短時間作成した事例を共有</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">📒</div>
+                                <div class="topic-content">
+                                    <h4>業務自動化とAPI公開の差</h4>
+                                    <p>経費精算や会計はAPIが開かれているサービスへ寄せた方が連携しやすい。関係者側の利用環境も乗り換えコストになる</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vol1-highlights">
+                        <h3>💡 技術的な発見・Tips</h3>
+                        <ul class="highlights-list">
+                            <li><strong>Jev</strong>：生成の代替ではなく、分岐・分類・ルーティングの前処理として置くと効果が出やすい。小規模では通常モデルとの差が見えにくい</li>
+                            <li><strong>スキル横断</strong>：SKILL.mdとして読む仕組みなら、Claude Code向けでもCodexやCursorに移植しやすい</li>
+                            <li><strong>ブラウザ操作</strong>：初見作業や可視性に強い一方、機密情報や職場環境では権限と利用場所を分ける</li>
+                            <li><strong>実行環境</strong>：ローカル性能、並列実行、ウェブ実行、課金のどこにコストを置くかの選択になっている</li>
+                            <li><strong>企業基盤</strong>：モデル性能だけでなく、オプトアウト、クレジット適用範囲、請求方法が選定条件になる</li>
+                            <li><strong>ベンダー依存</strong>：開発環境とモデル提供元の関係は固定ではなく、契約変更で常用モデルが突然使えなくなる</li>
+                        </ul>
+                    </div>
+
+                    <div class="vol1-decisions">
+                        <h3>📋 印象的な発言・気づき</h3>
+                        <ul class="decisions-list">
+                            <li>Jevの導入効果は「判断そのものが多いか」「分岐後の処理コストが高いか」で決まる</li>
+                            <li>CLI型エージェントは方言のように似てきており、特定製品への定着より再利用できるスキル設計の方が重要</li>
+                            <li>日常作業の多くは最先端モデルでなくても足りる一方、提携変化で常用モデルが外れるリスクはある</li>
+                            <li>OpenAIの負債規模や提携先の変化は、利用者側のツール選定にも影響しうる</li>
+                            <li>公開APIと地理データが揃っている領域では、短時間開発でも実用的な可視化アプリを作りやすい</li>
+                            <li>会計などの業務自動化は、API公開の有無と関係者側の利用環境まで含めて設計する必要がある</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
