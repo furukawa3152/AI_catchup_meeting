@@ -92,6 +92,10 @@
                     <p>オンライン開催<br>（気軽に参加）</p>
                 </div>
                 <div class="event-detail">
+                    <h3>🎯 第16回</h3>
+                    <p>2026年10月25日（日）<br>21:30〜22:32</p>
+                </div>
+                <div class="event-detail">
                     <h3>🎯 第15回</h3>
                     <p>2026年9月27日（日）<br>21:30〜22:44</p>
                 </div>
@@ -189,6 +193,103 @@
                     <div class="feature-icon">❓</div>
                     <h3>課題・困りごと</h3>
                     <p>生成AI活用で困っていることや課題を共有し、みんなで解決策を考えます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第16回の内容セクション -->
+    <section class="section" id="vol16-content">
+        <div class="container">
+            <h2 class="section-title">第16回の内容はこちら</h2>
+            <div class="vol1-content">
+                <div class="vol1-image">
+                    <img src="cameet16.png" alt="第16回生成AIキャッチアップ会の内容まとめ" class="vol1-summary-image">
+                </div>
+                <div class="vol1-details">
+                    <div class="vol1-info">
+                        <h3>📅 開催日時</h3>
+                        <p>2026年10月25日（日）21:30-22:32</p>
+                    </div>
+
+                    <div class="vol1-topics">
+                        <h3>🎯 主な話題</h3>
+                        <div class="topic-grid">
+                            <div class="topic-item">
+                                <div class="topic-icon">☁️</div>
+                                <div class="topic-content">
+                                    <h4>クラウド端末付きボットの登場</h4>
+                                    <p>ボットごとにクラウド上の専用PCが用意され、手元のメモリを使わず作業できる。Grok系はX、Meta系はSNS連携が強い</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🔐</div>
+                                <div class="topic-content">
+                                    <h4>パスワード管理とエージェント連携</h4>
+                                    <p>1PasswordをMCPやCLIから扱い、秘密情報は保管庫の参照先だけ渡す。ログイン時の都度承認で委任と監督を両立</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🎵</div>
+                                <div class="topic-content">
+                                    <h4>ローカル音声制作とAudio Studio</h4>
+                                    <p>完全ローカルのオープンソース。MCP経由で必要なときに効果音やBGMを生成でき、ゲームやスライドへの埋め込みに向く</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🎹</div>
+                                <div class="topic-content">
+                                    <h4>Claude Codeによる音楽生成と楽譜読み取り</h4>
+                                    <p>ゲーム向けの短いループ音楽をコード生成で作成。楽譜写真は全体より一小節・数段ずつ渡す方が後戻りしにくい</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🗣️</div>
+                                <div class="topic-content">
+                                    <h4>音声合成・音声対話・リップシンク</h4>
+                                    <p>移動中の壁打ちや電話での雑談が可能に。人間はフィラーを消し、AIはあいづちを足す。簡易な口パクへの需要も</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🖥️</div>
+                                <div class="topic-content">
+                                    <h4>開発支援とクラウドGPU</h4>
+                                    <p>Claude Codeは実装エラーを通しやすい。有料プランのGPU特典は価値がある一方、接続しっぱなしだとクレジットが減る</p>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <div class="topic-icon">🛡️</div>
+                                <div class="topic-content">
+                                    <h4>ウェブサイト運用と情報リスク</h4>
+                                    <p>更新できないPHP／WordPressはログ確認が先。ボットへ渡す情報は国外の法制度の影響を受ける前提で選ぶ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vol1-highlights">
+                        <h3>💡 技術的な発見・Tips</h3>
+                        <ul class="highlights-list">
+                            <li><strong>クラウド端末</strong>：自宅PCにVPNを張る自前構成が、サービスとしてまとまってきた。スペックは聞けるがデータ所在は国レベルまで</li>
+                            <li><strong>秘密情報</strong>：APIキーを設定ファイルに直書きせず、保管庫の参照と都度承認で渡す方が安全</li>
+                            <li><strong>Audio Studio</strong>：モデルを手元に落とせば無料。効果音の用意がバイブコーディングのボトルネックになりにくい</li>
+                            <li><strong>音楽生成</strong>：完成曲サービスとは別に、短いループをコード生成してアプリへ埋め込む道がある</li>
+                            <li><strong>GPU特典</strong>：高性能アクセラレータは計算用途で価値があるが、切断しないとクレジットが減り続ける</li>
+                            <li><strong>運用リスク</strong>：古いCMSの放置と、ボットへ渡す情報の国外移転をセットで考える</li>
+                        </ul>
+                    </div>
+
+                    <div class="vol1-decisions">
+                        <h3>📋 印象的な発言・気づき</h3>
+                        <ul class="decisions-list">
+                            <li>エージェントの主戦場は、手元のチャットからクラウド上の専用端末・音声・外部連携を含む常時稼働へ移っている</li>
+                            <li>秘密情報は端末に置かず、保管庫への参照と都度承認で渡す方が委任と安全性を両立しやすい</li>
+                            <li>音楽や効果音は、完成曲サービスだけでなく、ローカル生成やコード生成でアプリへ埋め込む道が増えている</li>
+                            <li>音声対話では、人間らしさの演出と、文字起こしでのノイズ除去が同時に進んでいる</li>
+                            <li>無料枠や特典のGPU、大量トークンは試しやすい一方、制限やデータ所在の変化を見込む必要がある</li>
+                            <li>古いウェブ基盤の放置は、生成AI以前からの運用問題として再認識されている</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
